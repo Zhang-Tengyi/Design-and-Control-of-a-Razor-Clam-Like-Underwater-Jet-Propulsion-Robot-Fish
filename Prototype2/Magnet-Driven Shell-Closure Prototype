@@ -1,15 +1,10 @@
-Goal: Mimic the clam’s outer membrane contraction via shell closure.
-Design Idea:
+Overview：
+This prototype imitates the razor clam’s outer membrane contraction by using a magnet-driven shell closure mechanism.
+A rotor embedded with permanent magnets rotates beneath the upper shell. As it turns, the magnetic poles alternately repel and attract the magnets fixed on the shell, causing it to periodically open and close.
+Each closing motion squeezes water from the rear outlet, generating pulsed jet thrust that propels the robot forward.
 
-Designed upper–lower shell linked by an elastic film forming a sealed chamber.
-
-Used rotating permanent magnets to periodically open/close the shell, generating a water-jet propulsion cycle.
-Key Challenges & Solutions:
-
-Problem: Electromagnets lacked force and efficiency underwater.
-Solution: Switched to a permanent magnet + rotor drive design.
-
-Problem: Low thrust efficiency.
-Solution: Optimized nozzle size (700 mm²) and rotation speed (60 rpm), achieving the best balance between speed and stability.
-Tools: SolidWorks, MATLAB, STC89C52RC microcontroller, Fluent CFD.
-Result: Achieved ~19 mm/s stable motion with controllable periodic propulsion
+Design Concept：
+The robot consists of upper and lower shells connected by a thin elastic film, forming a sealed water chamber.
+A DC motor drives the internal rotor carrying four symmetrically arranged permanent magnets.
+When the magnetic poles align (N–N or S–S), the shells repel and open; when opposite (N–S), they attract and close.
+The cyclic volume change of the chamber creates a suction–jet sequence, mimicking the clam’s natural motion.
