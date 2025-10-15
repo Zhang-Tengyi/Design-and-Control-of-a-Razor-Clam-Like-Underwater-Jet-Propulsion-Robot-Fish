@@ -1,6 +1,4 @@
 # Design-and-Control-of-a-Razor-Clam-Like-Underwater-Jet-Propulsion-Robot-Fish
-This work designs a bionic jet-propelled robot inspired by the razor clam. It mimics the clam’s water-jet motion using a magnetic-driven shell and flexible membrane. A second design uses a tubular origami structure to simulate foot contraction. Both were optimized, 3D printed, and tested.
-
 This work presents the design of a bionic jet-propelled robot inspired by the razor clam (Sinonovacula constricta), aiming to replicate its unique jet-based locomotion for underwater motion.
 
 First, the biological structure and movement of the razor clam were analyzed. When threatened, the clam performs a rapid escape by whipping its foot and ejecting water through its siphon, reaching a speed of about 50 cm/s. High-speed imaging shows that the foot movement rotates the body by 90°, positioning the shell opening downward while the siphon—located between the foot and mantle—expels water to reduce ground friction.
