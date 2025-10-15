@@ -1,0 +1,15 @@
+Goal: Mimic the clam’s outer membrane contraction via shell closure.
+Design Idea:
+
+Designed upper–lower shell linked by an elastic film forming a sealed chamber.
+
+Used rotating permanent magnets to periodically open/close the shell, generating a water-jet propulsion cycle.
+Key Challenges & Solutions:
+
+Problem: Electromagnets lacked force and efficiency underwater.
+Solution: Switched to a permanent magnet + rotor drive design.
+
+Problem: Low thrust efficiency.
+Solution: Optimized nozzle size (700 mm²) and rotation speed (60 rpm), achieving the best balance between speed and stability.
+Tools: SolidWorks, MATLAB, STC89C52RC microcontroller, Fluent CFD.
+Result: Achieved ~19 mm/s stable motion with controllable periodic propulsion
