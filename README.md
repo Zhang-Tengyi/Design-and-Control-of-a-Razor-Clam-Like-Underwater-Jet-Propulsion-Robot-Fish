@@ -47,12 +47,12 @@ Razor clams and other bivalves achieve short-range escape or burrowing motion by
 
 ## Design Concepts
 
-### Ⅰ. Shell-Closure Jet Propulsion System
+### 1. Shell-Closure Jet Propulsion System
 
 This design mimics the **mantle contraction** of the razor clam.  
 A pair of permanent magnets mounted on the upper shell and motor rotor alternate between attraction and repulsion to open and close the shell.
 
-- **Structure:** upper & lower shells + flexible sealing film  
+- **Structure:** upper and lower shells, flexible sealing film  
 - **Drive:** DC motor → rotor → magnetic actuation  
 - **Function:** cyclic compression of the internal water chamber to generate jet thrust  
 - **Control:** STC89C52RC microcontroller + Bluetooth module  
@@ -62,7 +62,7 @@ A pair of permanent magnets mounted on the upper shell and motor rotor alternate
 
 ---
 
-### Ⅱ. Tubular Origami Jet Propulsion System
+### 2. Tubular Origami Jet Propulsion System
 
 The second design imitates the **foot contraction** of the razor clam using a **tubular origami mechanism** with spring energy storage.  
 A gear-rack system driven by an N20 motor compresses the origami structure to expel water and generate thrust.
