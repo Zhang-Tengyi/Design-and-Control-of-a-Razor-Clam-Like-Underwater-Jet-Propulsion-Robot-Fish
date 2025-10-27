@@ -11,143 +11,36 @@ Finally, comparative tests between the two prototypes were carried out, and the 
 
 
 
-A research project exploring the jet-propulsion mechanism of the razor clam (Solen strictus) to design and test a bionic underwater robot capable of jet-based locomotion.
-Two propulsion schemes are implemented:
+# Bionic Razor-Clam-Inspired Jet-Propelled Underwater Robot
 
-Magnet-Driven Shell Closure System – simulating mantle contraction and water ejection.
+A research project exploring the **jet propulsion mechanism** of the razor clam (*Solen strictus*) to design and test a **bionic underwater robot** capable of efficient jet-based locomotion.  
+Two propulsion prototypes were developed:  
+1. **Magnet-Driven Shell Closure System** – simulating mantle contraction and water ejection.  
+2. **Tubular Origami Structure** – imitating the clam’s foot contraction for pulsatile jet thrust.  
 
-Tubular Origami Structure – imitating foot contraction for pulsatile jet thrust.
+Both designs were modeled in **SolidWorks**, simulated in **ANSYS Fluent**, 3D printed, and experimentally tested.
 
-Both prototypes were modeled in SolidWorks, analyzed in Fluent, 3D-printed, and experimentally tested in water tanks.
+---
 
-Table of Contents
+## Table of Contents
 
-Quick Start
+1. [Quick Start](#quick-start)
+2. [Project Overview](#project-overview)
+3. [Design Structure](#design-structure)
+4. [Simulation & Analysis](#simulation--analysis)
+5. [Experimental Testing](#experimental-testing)
+6. [Results & Discussion](#results--discussion)
+7. [File Organization](#file-organization)
+8. [References](#references)
 
-Project Overview
+---
 
-Design Structure
+## Quick Start
 
-Simulation & Analysis
-
-Experimental Testing
-
-Results & Discussion
-
-File Organization
-
-References
-
-Quick Start
+```bash
 # Clone the repository
-$ git clone https://github.com/<your-org>/bionic-razor-clam.git
-$ cd bionic-razor-clam
+git clone https://github.com/<your-username>/bionic-razor-clam.git
+cd bionic-razor-clam
 
-# CAD & Simulation
-# Models built with SolidWorks 2023 and simulated using ANSYS Fluent
-
-# Optional: run Fluent case file
-$ fluent 3ddp -i /sim/clam_jet_flow.cas
-
-
-After simulation, plots of velocity field, pressure distribution, and drag–thrust curves appear in the /results/ folder.
-
-Project Overview
-
-This work investigates jet propulsion in benthic shellfish and translates biological principles into robotic design.
-The razor clam moves by foot whipping and water ejection, reaching ~0.5 m/s during escape.
-High-speed video analysis revealed a 90° axial rotation that aligns the siphon downward to minimize drag.
-
-Design Structure
-
-Two main propulsion prototypes were developed:
-
-1. Magnet-Driven Shell Closure
-
-A motor-rotor system with paired permanent magnets drives shell opening/closing.
-
-A flexible membrane seals upper and lower shells to mimic mantle contraction.
-
-Controlled by a C51 microcontroller + Bluetooth module for remote testing.
-
-2. Tubular Origami Structure
-
-Inspired by the clam’s foot contraction, using spring-assisted origami tubes.
-
-A gear-rack system converts motor rotation into axial compression.
-
-Generates strong pulsatile jets for efficient thrust.
-
-Simulation & Analysis
-
-Fluent CFD simulations calculate jet thrust, flow distribution, and hydrodynamic resistance.
-
-Jet thrust 
-𝐹
-=
-𝑚
-˙
-𝑣
-𝑒
-F=
-m
-˙
-v
-e
-	​
-
-, efficiency 
-𝜂
-=
-2
-𝑈
-𝑣
-𝑒
-+
-𝑈
-η=
-v
-e
-	​
-
-+U
-2U
-	​
-
-.
-
-Results show optimized shell curvature and nozzle area significantly improve efficiency.
-
-Predicted velocity ≈ 1.8 cm/s (steady motion phase).
-
-Experimental Testing
-
-Prototypes tested in a 1 m × 0.3 m × 0.3 m water tank.
-
-Video-tracked to measure displacement and velocity.
-
-Performance metrics:
-
-Motor Speed (r/min)	Avg. Velocity (mm/s)
-30	4.0
-60	19.3
-90	12.4
-Results & Discussion
-
-The magnet-driven model validated periodic jet propulsion, though with moderate thrust.
-
-The origami model achieved higher impulse efficiency and stability (max ≈ 28 mm/s).
-
-Future improvements: miniaturized electronics, soft actuators, and adjustable nozzle control.
-
-File Organization
-bionic-razor-clam/
-│
-├── /cad_models/             # SolidWorks part & assembly files
-├── /simulation/             # Fluent .cas / .dat files
-├── /control/                # STM/C51 MCU control code
-├── /results/                # CFD plots & experimental data
-├── /docs/
-│   ├── thesis.pdf
-│   └── figures/
-└── README.md
+# Run Fluent simulation (optional)
+fluent 3ddp -i simulation/clam_jet_flow.cas
