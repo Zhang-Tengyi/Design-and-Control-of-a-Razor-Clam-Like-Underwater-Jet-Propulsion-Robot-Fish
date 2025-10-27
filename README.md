@@ -52,11 +52,10 @@ Razor clams and other bivalves achieve short-range escape or burrowing motion by
 This design mimics the **mantle contraction** of the razor clam.  
 A pair of permanent magnets mounted on the upper shell and motor rotor alternate between attraction and repulsion to open and close the shell.
 
-- **Structure:** upper and lower shells, flexible sealing film  
+- **Structure:** upper, lower shells and flexible sealing film  
 - **Drive:** DC motor → rotor → magnetic actuation  
 - **Function:** cyclic compression of the internal water chamber to generate jet thrust  
 - **Control:** STC89C52RC microcontroller + Bluetooth module  
-- **Simulated speed:** ≈ 19 mm/s  
 
 ![Shell structure](figures/shell_design.png)
 
@@ -67,32 +66,12 @@ A pair of permanent magnets mounted on the upper shell and motor rotor alternate
 The second design imitates the **foot contraction** of the razor clam using a **tubular origami mechanism** with spring energy storage.  
 A gear-rack system driven by an N20 motor compresses the origami structure to expel water and generate thrust.
 
-- **Structure:** origami tube + spring + gear-rack linkage  
+- **Structure:** origami tube, spring and gear-rack linkage  
 - **Drive:** motor → half gear → linkage → spring compression  
-- **Function:** pulse-type jet propulsion with larger water-volume change  
-- **Performance:** faster (≈ 28 mm/s), more stable than shell type  
+- **Function:** pulse-type jet propulsion with larger water-volume change    
 
-![Origami structure](figures/origami_design.png)
-
----
-
-## Simulation and Analysis  
-
-CFD simulations were performed using **ANSYS Fluent**.  
-Key parameters analyzed:  
-- Jet thrust \( F = \dot{m} v_e \)  
-- Propulsion efficiency \( \eta = \frac{2U}{v_e + U} \)  
-- Pressure and velocity distribution  
-- Flow resistance vs nozzle geometry  
-
-*Example Fluent results:*  
-![CFD contours](figures/fluent_results.png)
-
-**Predicted performance:**  
-| Model | Predicted Speed | Notes |
-| ------ | ---------------- | ----- |
-| Magnet-driven shell | 1.8 cm/s | Stable but low thrust |
-| Origami structure | 2.8 cm/s | Stronger impulse, higher efficiency |
+![external structure](Prototype2/img/external_structure.png)
+![internal structure](Prototype2/img/internal_structure.png)
 
 ---
 
@@ -100,7 +79,7 @@ Key parameters analyzed:
 
 **Setup:**  
 - Water tank (100 cm × 30 cm × 30 cm)  
-- STC89C52RC microcontroller + Bluetooth control  
+- STC89C52RC microcontroller and Bluetooth control  
 - N20 reduction motor for actuation  
 
 *Testing snapshot:*  
