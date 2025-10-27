@@ -11,15 +11,14 @@ Finally, comparative tests between the two prototypes were carried out, and the 
 
 
 
-# 🐚 Bionic Razor-Clam-Inspired Jet-Propelled Underwater Robot  
-*(仿竹蛏水下喷射推进机器鱼设计与控制)*  
+# Bionic Razor-Clam-Inspired Jet-Propelled Underwater Robot  
 
 A research project exploring **jet propulsion in bionic underwater robots**, inspired by the *razor clam (Solen strictus)*.  
 Two different propulsion mechanisms were designed, simulated, and tested to study **bio-inspired jet locomotion** and its efficiency in underwater movement.  
 
 ---
 
-## 📘 Table of Contents
+## Table of Contents
 1. [Project Overview](#project-overview)  
 2. [Bio-Inspiration & Motivation](#bio-inspiration--motivation)  
 3. [Design Concepts](#design-concepts)  
