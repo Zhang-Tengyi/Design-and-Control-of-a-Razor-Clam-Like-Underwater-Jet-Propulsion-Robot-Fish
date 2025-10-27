@@ -1,16 +1,3 @@
-# Design-and-Control-of-a-Razor-Clam-Like-Underwater-Jet-Propulsion-Robot-Fish
-This work presents the design of a bionic jet-propelled robot inspired by the razor clam (Sinonovacula constricta), aiming to replicate its unique jet-based locomotion for underwater motion.
-
-First, the biological structure and movement of the razor clam were analyzed. When threatened, the clam performs a rapid escape by whipping its foot and ejecting water through its siphon, reaching a speed of about 50 cm/s. High-speed imaging shows that the foot movement rotates the body by 90°, positioning the shell opening downward while the siphon—located between the foot and mantle—expels water to reduce ground friction.
-
-Based on this mechanism, a jet-propelled robotic prototype was designed. Using SolidWorks, a magnetic drive system was created in which a motor-driven rotor with permanent magnets controls the opening and closing of the upper shell. The shell motion compresses a flexible membrane to simulate the clam’s mantle contraction and water ejection. Fluid dynamics simulations in Fluent were conducted to analyze flow characteristics, thrust, and efficiency, followed by structural optimization and prototype fabrication for testing.
-
-A second design concept was later proposed using a tubular origami-like structure to imitate the clam’s foot contraction, generating thrust by expelling water through a nozzle. The model was also optimized and 3D printed for experimental verification.
-
-Finally, comparative tests between the two prototypes were carried out, and the propulsion performance and movement stability were comprehensively analyzed.
-
-
-
 # Bionic Razor-Clam-Inspired Jet-Propelled Underwater Robot  
 
 A research project exploring **jet propulsion in bionic underwater robots**, inspired by the *razor clam (Solen strictus)*.  
@@ -20,47 +7,47 @@ Two different propulsion mechanisms were designed, simulated, and tested to stud
 
 ## Table of Contents
 1. [Project Overview](#project-overview)  
-2. [Bio-Inspiration & Motivation](#bio-inspiration--motivation)  
+2. [Bio-Inspiration and Motivation](#bio-inspiration-and-motivation)  
 3. [Design Concepts](#design-concepts)  
-4. [Simulation & Analysis](#simulation--analysis)  
+4. [Simulation and Analysis](#simulation-and-analysis)  
 5. [Experimental Testing](#experimental-testing)  
-6. [Results & Discussion](#results--discussion)  
+6. [Results and Discussion](#results-and-discussion)  
 7. [Folder Structure](#folder-structure)  
 8. [Future Work](#future-work)  
 9. [References](#references)  
-10. [Acknowledgements](#acknowledgements)  
+10.[Acknowledgements](#acknowledgements)
 
 ---
 
-## 🧠 Project Overview  
+## Project Overview  
 
 This repository accompanies the research *“Design and Control of a Razor-Clam-Inspired Jet-Propelled Robotic Fish.”*  
 The goal is to replicate the razor clam’s unique **foot whipping and water-jet propulsion** mechanism, which allows rapid escape movement (~50 cm/s).  
 
-The project combines:  
-- **Mechanical Design** in SolidWorks  
-- **CFD Simulation** in ANSYS Fluent  
-- **Control Circuit Design** using C51 MCU  
-- **3D Printing & Experimental Testing**  
+Key highlights:  
+- Dual propulsion prototypes based on different contraction mechanisms  
+- 3D CAD design and modular prototyping in SolidWorks  
+- Microcontroller-based actuation and Bluetooth remote control  
+- Experimental comparison of two propulsion architectures 
 
 ---
 
-## 🌊 Bio-Inspiration & Motivation  
+## Bio-Inspiration and Motivation  
 
 Razor clams exhibit a **composite propulsion** combining:  
 1. **Foot whipping** — rotates the body 90° about the longitudinal axis  
 2. **Jet ejection** — mantle contraction expels stored water through the siphon  
 
-This efficient escape mechanism inspired the development of a **bionic jet-propelled robot** that mimics the clam’s dual action for underwater locomotion.
+Razor clams and other bivalves achieve short-range escape or burrowing motion by cyclically ejecting water and retracting their bodies. This principle inspired the design of two robotic prototypes that mimic the same contraction–ejection pattern, translating internal volume change into thrust.
 
 *Example schematic of the clam motion:*  
 ![Bio-inspired diagram](figures/bio_inspiration.png)  
 
 ---
 
-## 🧩 Design Concepts
+## Design Concepts
 
-### Ⅰ. Shell-Closure Jet Propulsion System (上下壳闭合式)
+### Ⅰ. Shell-Closure Jet Propulsion System
 
 This design mimics the **mantle contraction** of the razor clam.  
 A pair of permanent magnets mounted on the upper shell and motor rotor alternate between attraction and repulsion to open and close the shell.
@@ -75,7 +62,7 @@ A pair of permanent magnets mounted on the upper shell and motor rotor alternate
 
 ---
 
-### Ⅱ. Tubular Origami Jet Propulsion System (管状折纸结构式)
+### Ⅱ. Tubular Origami Jet Propulsion System
 
 The second design imitates the **foot contraction** of the razor clam using a **tubular origami mechanism** with spring energy storage.  
 A gear-rack system driven by an N20 motor compresses the origami structure to expel water and generate thrust.
@@ -89,7 +76,7 @@ A gear-rack system driven by an N20 motor compresses the origami structure to ex
 
 ---
 
-## 💻 Simulation & Analysis  
+## Simulation and Analysis  
 
 CFD simulations were performed using **ANSYS Fluent**.  
 Key parameters analyzed:  
@@ -109,7 +96,7 @@ Key parameters analyzed:
 
 ---
 
-## 🧪 Experimental Testing  
+## Experimental Testing  
 
 **Setup:**  
 - Water tank (100 cm × 30 cm × 30 cm)  
@@ -129,7 +116,7 @@ Key parameters analyzed:
 
 ---
 
-## 📊 Results & Discussion  
+## Results and Discussion  
 
 - The **magnet-driven design** confirmed feasibility of jet propulsion, though efficiency remained moderate.  
 - The **origami-based system** achieved higher propulsion speed and smoother jet pulses.  
@@ -138,6 +125,6 @@ Key parameters analyzed:
 
 ---
 
-## 📁 Folder Structure  
+## Folder Structure  
 
 
