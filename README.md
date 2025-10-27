@@ -12,10 +12,6 @@ Two different propulsion mechanisms were designed, simulated, and tested to stud
 4. [Simulation and Analysis](#simulation-and-analysis)  
 5. [Experimental Testing](#experimental-testing)  
 6. [Results and Discussion](#results-and-discussion)  
-7. [Folder Structure](#folder-structure)  
-8. [Future Work](#future-work)  
-9. [References](#references)  
-10.[Acknowledgements](#acknowledgements)
 
 ---
 
@@ -75,35 +71,52 @@ A gear-rack system driven by an N20 motor compresses the origami structure to ex
 
 ---
 
+## Electronic Circuit and PCB Design  
+
+The control system of the robot is built around an **STC89C52RC microcontroller**, which manages motor actuation and wireless communication through a Bluetooth module. Users can remotely control the **motor’s rotational speed** via a smartphone Bluetooth app, sending PWM commands to adjust the propulsion strength in real time.
+
+The circuit integrates voltage regulation, motor driver, Bluetooth serial communication, and programming interfaces on a compact 2-layer PCB. This design ensures stable power delivery, minimal wiring, and reliable wireless control for both prototypes.
+
+---
+
 ## Experimental Testing  
 
-**Setup:**  
-- Water tank (100 cm × 30 cm × 30 cm)  
-- STC89C52RC microcontroller and Bluetooth control  
-- N20 reduction motor for actuation  
+Both prototypes were fabricated via **3D printing (PLA)** and tested in a 1 m × 0.3 m × 0.3 m tank.  
+Tests were video-recorded, and displacement was measured frame-by-frame.
 
-*Testing snapshot:*  
-![Experiment photo](figures/experiment.png)
-
-**Results summary:**  
-
+### Prototype 1: Shell Closure Type
 | Motor Speed (r/min) | Avg. Velocity (mm/s) |
 | -------------------- | -------------------- |
 | 30 | 4.0 |
 | 60 | **19.3** |
 | 90 | 12.4 |
 
+### Prototype 2: Origami Jet Type
+| Motor Speed (r/min) | Avg. Velocity (mm/s) |
+| -------------------- | -------------------- |
+| 30 | 7.5 |
+| 60 | **28.1** |
+| 90 | 21.7 |
+
+**Observation:**  
+The origami-based prototype produced more uniform thrust and better directional stability, while the shell-type design achieved reliable repetitive motion but lower efficiency.
+
 ---
 
 ## Results and Discussion  
 
-- The **magnet-driven design** confirmed feasibility of jet propulsion, though efficiency remained moderate.  
-- The **origami-based system** achieved higher propulsion speed and smoother jet pulses.  
-- **Optimizing nozzle area** and **membrane elasticity** significantly enhanced thrust.  
-- Future improvements may include **miniaturized waterproof electronics** and **adjustable directional control**.  
+Two propulsion prototypes were developed and tested.  
+
+**Prototype 1 – Magnet-Driven Shell Closure:**  
+Using permanent magnets on a motor-driven rotor, cyclic attraction and repulsion generated periodic shell motion for water ejection.  
+The system achieved stable jet pulses with a peak speed of **≈ 19 mm/s**, proving the concept feasible but with limited thrust and slower refill.  
+Improvements such as stronger magnets, reduced body size, and elastic sealing materials could enhance performance.  
+
+**Prototype 2 – Tubular Origami Jet System:**  
+Inspired by the clam’s foot contraction and origami folding mechanics, a spring-assisted compression chamber produced stronger pulsatile jets.  
+Tests showed a smoother and faster motion with a peak velocity of **≈ 28 mm/s**, demonstrating better efficiency and stability than the first design.  
+ 
 
 ---
-
-## Folder Structure  
 
 
