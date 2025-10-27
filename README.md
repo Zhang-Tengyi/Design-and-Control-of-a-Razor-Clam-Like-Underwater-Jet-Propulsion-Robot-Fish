@@ -76,6 +76,8 @@ A gear-rack system driven by an N20 motor compresses the origami structure to ex
 The control system of the robot is built around an **STC89C52RC microcontroller**, which manages motor actuation and wireless communication through a Bluetooth module. Users can remotely control the **motor’s rotational speed** via a smartphone Bluetooth app, sending PWM commands to adjust the propulsion strength in real time.
 
 The circuit integrates voltage regulation, motor driver, Bluetooth serial communication, and programming interfaces on a compact 2-layer PCB. This design ensures stable power delivery, minimal wiring, and reliable wireless control for both prototypes.
+![Schematic_Diagram](img/Schematic_Diagram.png)
+![PCB](img/PCB.png)
 
 ---
 
