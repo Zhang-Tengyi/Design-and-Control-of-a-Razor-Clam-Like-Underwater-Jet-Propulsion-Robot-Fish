@@ -41,7 +41,7 @@ Razor clams exhibit a **composite propulsion** combining:
 Razor clams and other bivalves achieve short-range escape or burrowing motion by cyclically ejecting water and retracting their bodies. This principle inspired the design of two robotic prototypes that mimic the same contraction–ejection pattern, translating internal volume change into thrust.
 
 *Example schematic of the clam motion:*  
-![clam motion](Prototype2/img/clam motion.png)  
+![clam motion](Prototype2/img/clam_motion.png)  
 
 ---
 
