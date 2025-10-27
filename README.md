@@ -1,7 +1,7 @@
 # Bionic Razor-Clam-Inspired Jet-Propelled Underwater Robot  
 
-A research project exploring **jet propulsion in bionic underwater robots**, inspired by the *razor clam (Solen strictus)*.  
-Two different propulsion mechanisms were designed, simulated, and tested to study **bio-inspired jet locomotion** and its efficiency in underwater movement.  
+A research project exploring jet propulsion in bionic underwater robots, inspired by the razor clam (Solen strictus).  
+Two different propulsion mechanisms were designed, simulated, and tested to study bio-inspired jet locomotion and its efficiency in underwater movement.  
 
 ---
 
@@ -9,7 +9,7 @@ Two different propulsion mechanisms were designed, simulated, and tested to stud
 1. [Project Overview](#project-overview)  
 2. [Bio-Inspiration and Motivation](#bio-inspiration-and-motivation)  
 3. [Design Concepts](#design-concepts)  
-4. [Simulation and Analysis](#simulation-and-analysis)  
+4. [Electronic Circuit and PCB Design](#electronic-circuit-and-pcb-design)  
 5. [Experimental Testing](#experimental-testing)  
 6. [Results and Discussion](#results-and-discussion)  
 
@@ -18,7 +18,7 @@ Two different propulsion mechanisms were designed, simulated, and tested to stud
 ## Project Overview  
 
 This repository accompanies the research *“Design and Control of a Razor-Clam-Inspired Jet-Propelled Robotic Fish.”*  
-The goal is to replicate the razor clam’s unique **foot whipping and water-jet propulsion** mechanism, which allows rapid escape movement (~50 cm/s).  
+The goal is to replicate the razor clam’s unique foot whipping and water-jet propulsion mechanism, which allows rapid escape movement (~50 cm/s).  
 
 Key highlights:  
 - Dual propulsion prototypes based on different contraction mechanisms  
@@ -31,8 +31,8 @@ Key highlights:
 ## Bio-Inspiration and Motivation  
 
 Razor clams exhibit a **composite propulsion** combining:  
-1. **Foot whipping** — rotates the body 90° about the longitudinal axis  
-2. **Jet ejection** — mantle contraction expels stored water through the siphon  
+1. **Foot whipping**: rotates the body 90° about the longitudinal axis  
+2. **Jet ejection**: mantle contraction expels stored water through the siphon  
 
 Razor clams and other bivalves achieve short-range escape or burrowing motion by cyclically ejecting water and retracting their bodies. This principle inspired the design of two robotic prototypes that mimic the same contraction–ejection pattern, translating internal volume change into thrust.
 
@@ -45,7 +45,7 @@ Razor clams and other bivalves achieve short-range escape or burrowing motion by
 
 ### 1. Shell-Closure Jet Propulsion System
 
-This design mimics the **mantle contraction** of the razor clam.  
+This design mimics the mantle contraction of the razor clam.  
 A pair of permanent magnets mounted on the upper shell and motor rotor alternate between attraction and repulsion to open and close the shell.
 
 - **Structure:** upper, lower shells and flexible sealing film  
@@ -59,12 +59,13 @@ A pair of permanent magnets mounted on the upper shell and motor rotor alternate
 
 ### 2. Tubular Origami Jet Propulsion System
 
-The second design imitates the **foot contraction** of the razor clam using a **tubular origami mechanism** with spring energy storage.  
+The second design imitates the foot contraction of the razor clam using a tubular origami mechanism with spring energy storage.  
 A gear-rack system driven by an N20 motor compresses the origami structure to expel water and generate thrust.
 
 - **Structure:** origami tube, spring and gear-rack linkage  
 - **Drive:** motor → half gear → linkage → spring compression  
-- **Function:** pulse-type jet propulsion with larger water-volume change    
+- **Function:** pulse-type jet propulsion with larger water-volume change
+- **Control:** STC89C52RC microcontroller + Bluetooth module     
 
 ![external structure](Prototype2/img/external_structure.png)
 ![internal structure](Prototype2/img/internal_structure.png)
@@ -73,7 +74,7 @@ A gear-rack system driven by an N20 motor compresses the origami structure to ex
 
 ## Electronic Circuit and PCB Design  
 
-The control system of the robot is built around an **STC89C52RC microcontroller**, which manages motor actuation and wireless communication through a Bluetooth module. Users can remotely control the **motor’s rotational speed** via a smartphone Bluetooth app, sending PWM commands to adjust the propulsion strength in real time.
+The control system of the robot is built around an STC89C52RC microcontroller, which manages motor actuation and wireless communication through a Bluetooth module. Users can remotely control the motor’s rotational speed via a smartphone Bluetooth app, sending PWM commands to adjust the propulsion strength in real time.
 
 The circuit integrates voltage regulation, motor driver, Bluetooth serial communication, and programming interfaces on a compact 2-layer PCB. This design ensures stable power delivery, minimal wiring, and reliable wireless control for both prototypes.
 ![Schematic_Diagram](img/Schematic_Diagram.png)
@@ -83,7 +84,7 @@ The circuit integrates voltage regulation, motor driver, Bluetooth serial commun
 
 ## Experimental Testing  
 
-Both prototypes were fabricated via **3D printing (PLA)** and tested in a 1 m × 0.3 m × 0.3 m tank.  
+Both prototypes were fabricated via 3D printing and tested in a 1 m × 0.3 m × 0.3 m tank.  
 Tests were video-recorded, and displacement was measured frame-by-frame.
 
 ### Prototype 1: Shell Closure Type
