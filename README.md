@@ -57,7 +57,7 @@ A pair of permanent magnets mounted on the upper shell and motor rotor alternate
 - **Function:** cyclic compression of the internal water chamber to generate jet thrust  
 - **Control:** STC89C52RC microcontroller + Bluetooth module  
 
-![Shell structure](figures/shell_design.png)
+![Prototype1](Prototype1/Prototype1.png)
 
 ---
 
